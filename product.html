@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+    <script>
+        // function setcookie(name, input) {
+        //     // document.cookie = document.getElementsByClassName("product-id").value;
+        //     document.cookie = name + "=" + input + ";"
+        //     // console.log(input);
+        // }
+ 
+        function getbuttonElement() {
+            let productid = document.getElementsByClassName("product-id").value;
+           return productid;
+        }
+
+        function setcookie(name, input) {
+            document.cookie = name + "=" + input;
+            console.log(document.cookie)
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main-header">
+        <div><br><br>
+            <h1>PRODUCTS</h1>
+        </div>
+        <div id="cart-icon">
+            <a href="cart.html">
+                <img id="cart" src="cart.png" alt="cart">
+            </a>
+        </div>
+    </div>
+    <div class="products">
+        <div id="product-1">
+            <img class="product-image" src="prod1.jpg" alt="product-1">
+            <p class="product-name">OnePlus Nord CE4 Lite 5G</p>
+            <p class="product-id" value="1">1</p>
+            <button onclick="setcookie('product-1',getbuttonElement(this))" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-2">
+            <img class="product-image" src="prod2.jpg" alt="product-2">
+            <p class="product-name">Samsung Galaxy M35 5G</p>
+            <p class="product-id" value="2">2</p>
+            <button onclick="setcookie('product-2',document.getElementsByClassName('product-id').value)" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-3">
+            <img class="product-image" src="prod3.jpg" alt="product-3">
+            <p class="product-name">iQOO Z9x 5G</p>
+            <p class="product-id">3</p>
+            <button onclick="setcookie('product-3',document.getElementsByClassName('product-id'))" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-4">
+            <img class="product-image" src="prod4.jpg" alt="product-4">
+            <p class="product-name">realme NARZO 70 5G</p>
+            <p class="product-id">4</p>
+            <button onclick="setcookie('product-id', 4)" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-5">
+            <img class="product-image" src="prod5.jpg" alt="product-5">
+            <p class="product-name">Redmi 12 5G</p>
+            <p class="product-id">5</p>
+            <button onclick="setcookie('product-id', 5)" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-6">
+            <img class="product-image" src="prod6.jpg" alt="product-6">
+            <p class="product-name">Apple iPhone 15</p>
+            <p class="product-id">6</p>
+            <button onclick="setcookie(6)" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-7">
+            <img class="product-image" src="prod7.jpg" alt="product-7">
+            <p class="product-name">OnePlus 12R</p>
+            <p class="product-id">7</p>
+            <button onclick="setcookie(7)" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-8">
+            <img class="product-image" src="prod8.jpg" alt="product-8">
+            <p class="product-name">iQOO Z9 5G</p>
+            <p class="product-id">8</p>
+            <button onclick="setcookie(8)" class="atc">Add to
+                Cart</button>
+        </div>
+
+        <div id="product-9">
+            <img class="product-image" src="prod9.jpg" alt="product-9">
+            <p class="product-name">realme NARZO 70x 5G</p>
+            <p class="product-id">9</p>
+            <button onclick="setcookie(9)" class="atc">Add to
+                Cart</button>
+        </div>
+    </div>
+</body>
+
+</html>
