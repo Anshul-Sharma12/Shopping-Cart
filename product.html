@@ -6,23 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="product.css">
-    <script>
-        // function setcookie(name, input) {
-        //     // document.cookie = document.getElementsByClassName("product-id").value;
-        //     document.cookie = name + "=" + input + ";"
-        //     // console.log(input);
-        // }
- 
-        function getbuttonElement() {
-            let productid = document.getElementsByClassName("product-id").value;
-           return productid;
-        }
-
-        function setcookie(name, input) {
-            document.cookie = name + "=" + input;
-            console.log(document.cookie)
-        }
-    </script>
+    <script src="test.js"></script>
 </head>
 
 <body>
@@ -40,72 +24,72 @@
         <div id="product-1">
             <img class="product-image" src="prod1.jpg" alt="product-1">
             <p class="product-name">OnePlus Nord CE4 Lite 5G</p>
-            <p class="product-id" value="1">1</p>
-            <button onclick="setcookie('product-1',getbuttonElement(this))" class="atc">Add to
+            <input type="hidden" value="1" class="product-id" id="product-id-1" />
+            <button onclick="setcookie('product-id-1',document.getElementById('product-id-1').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-2">
             <img class="product-image" src="prod2.jpg" alt="product-2">
             <p class="product-name">Samsung Galaxy M35 5G</p>
-            <p class="product-id" value="2">2</p>
-            <button onclick="setcookie('product-2',document.getElementsByClassName('product-id').value)" class="atc">Add to
+            <input type="hidden" value="2" class="product-id" id="product-id-2" />
+            <button onclick="setcookie('product-id-2',document.getElementById('product-id-2').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-3">
             <img class="product-image" src="prod3.jpg" alt="product-3">
             <p class="product-name">iQOO Z9x 5G</p>
-            <p class="product-id">3</p>
-            <button onclick="setcookie('product-3',document.getElementsByClassName('product-id'))" class="atc">Add to
+            <input type="hidden" value="3" class="product-id" id="product-id-3" />
+            <button onclick="setcookie('product-id-3',document.getElementById('product-id-3').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-4">
             <img class="product-image" src="prod4.jpg" alt="product-4">
             <p class="product-name">realme NARZO 70 5G</p>
-            <p class="product-id">4</p>
-            <button onclick="setcookie('product-id', 4)" class="atc">Add to
+            <input type="hidden" value="4" class="product-id" id="product-id-4" />
+            <button onclick="setcookie('product-id-4',document.getElementById('product-id-4').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-5">
             <img class="product-image" src="prod5.jpg" alt="product-5">
             <p class="product-name">Redmi 12 5G</p>
-            <p class="product-id">5</p>
-            <button onclick="setcookie('product-id', 5)" class="atc">Add to
+            <input type="hidden" value="5" class="product-id" id="product-id-5" />
+            <button onclick="setcookie('product-id-5',document.getElementById('product-id-5').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-6">
             <img class="product-image" src="prod6.jpg" alt="product-6">
-            <p class="product-name">Apple iPhone 15</p>
-            <p class="product-id">6</p>
-            <button onclick="setcookie(6)" class="atc">Add to
+            <p class="product-name">Samsung Galaxy S24 Ultra 5G</p>
+            <input type="hidden" value="6" class="product-id" id="product-id-6" />
+            <button onclick="setcookie('product-id-6',document.getElementById('product-id-6').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-7">
             <img class="product-image" src="prod7.jpg" alt="product-7">
             <p class="product-name">OnePlus 12R</p>
-            <p class="product-id">7</p>
-            <button onclick="setcookie(7)" class="atc">Add to
+            <input type="hidden" value="7" class="product-id" id="product-id-7" />
+            <button onclick="setcookie('product-id-7',document.getElementById('product-id-7').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-8">
             <img class="product-image" src="prod8.jpg" alt="product-8">
             <p class="product-name">iQOO Z9 5G</p>
-            <p class="product-id">8</p>
-            <button onclick="setcookie(8)" class="atc">Add to
+            <input type="hidden" value="8" class="product-id" id="product-id-8" />
+            <button onclick="setcookie('product-id-8',document.getElementById('product-id-8').value)" class="atc">Add to
                 Cart</button>
         </div>
 
         <div id="product-9">
             <img class="product-image" src="prod9.jpg" alt="product-9">
-            <p class="product-name">realme NARZO 70x 5G</p>
-            <p class="product-id">9</p>
-            <button onclick="setcookie(9)" class="atc">Add to
+            <p class="product-name">Samsung Galaxy S23 Ultra 5G</p>
+            <input type="hidden" value="9" class="product-id" id="product-id-9" />
+            <button onclick="setcookie('product-id-9',document.getElementById('product-id-9').value)" class="atc">Add to
                 Cart</button>
         </div>
     </div>
