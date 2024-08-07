@@ -1,3 +1,39 @@
 h1 {
     text-align: center;
 }
+
+
+
+.product {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product img {
+    max-width: 220px;
+}
+
+.product p {
+    margin: 0;
+}
+
+.product button {
+    width: 20%;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #ef8f8f;
+}
+
+.product button:hover {
+    background-color: #663a3a;
+    color: white;
+}
+
+.product button:active {
+    width: 19.8%;
+    padding: 7px;
+}
