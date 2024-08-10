@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function printPattern(n) {
+            let output = '';
+
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= i; j++) {
+                    output += j + ' ';
+                }
+                output = output.trim() + '\n';
+            }
+
+            for (let i = n - 1; i >= 1; i--) {
+                for (let j = 1; j <= i; j++) {
+                    output += j + ' ';
+                }
+                output = output.trim() + '\n'; 
+            }
+
+            document.getElementById("result").textContent = output;
+        }
+        function createpattern() {
+            const input = parseInt(document.getElementById('numinput').value, 10);
+            printPattern(input);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="numinput" min="1" />
+    <button onclick="createpattern()">show pattern</button>
+    <pre id="result"></pre>
+</body>
+
+</html>
